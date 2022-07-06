@@ -10,7 +10,7 @@ import { DialogAddPlayerComponent } from '../dialog-add-player/dialog-add-player
 })
 export class GameComponent implements OnInit {
   pickCardAnimation = false;
-  currentCard: string | undefined = '';
+  currentCard: string = '';
   game!: Game;
 
 
@@ -29,10 +29,10 @@ export class GameComponent implements OnInit {
 
   takeCard() {
     if (!this.pickCardAnimation) {
-      this.currentCard = this.game.cardStack.pop();
+      this.currentCard = this.game.cardStack.pop() || this.currentCard;
       this.pickCardAnimation = true;
       setTimeout(() => {
-        this.game.playedCards.push(this.currentCard!);
+        this.game.playedCards.push(this.currentCard);
         this.pickCardAnimation = false;
       }, 1000);
     }
