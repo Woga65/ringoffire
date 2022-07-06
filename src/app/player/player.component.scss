@@ -1,7 +1,7 @@
 .player {
     display: flex;
     align-items: center;
-    background-color:#f1b700;
+    background-color: rgba(128,128,128, 0.8);
     color: #552200;
     border-top-left-radius: 50px;
     border-bottom-left-radius: 50px;
@@ -9,8 +9,8 @@
     max-width: 300px;
 
     img {
-        width: 100px;
-        height: auto;
+        height: 70px;
+        width: auto;
         object-fit: cover;
         border-radius: 100%;
     }
@@ -19,4 +19,8 @@
         font-size: 32px;
         margin-left: 16px;
     }
+}
+
+.player-active {
+    background-color:#f1b700;
 }
