@@ -49,7 +49,6 @@ import { AngularFireModule } from '@angular/fire/compat';
     provideDatabase(() => getDatabase()),
     provideFirestore(() => getFirestore())
   ],
-  providers: [],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
