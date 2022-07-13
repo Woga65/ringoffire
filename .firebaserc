@@ -1,0 +1,14 @@
+{
+  "targets": {
+    "ring-of-firebase-220713": {
+      "hosting": {
+        "ringoffire": [
+          "ring-of-firebase-220713"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "default": "ring-of-firebase-220713"
+  }
+}

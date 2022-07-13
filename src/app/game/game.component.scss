@@ -54,6 +54,7 @@
 .player-component {
     position: absolute;
     right: 0;
+    z-index: 10;
 }
 
 .btn-add {
